@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+<head>
+    <title>CTF Cloud Metadata API</title>
+</head>
+<body>
+    <h1>Can you spot the SSRF vulnerability?</h1>
+    <form method="post" action="/checkAvailability">
+        <label for="itemName">Your super safe payload comes here:</label>
+        <input type="text" id="itemName" name="itemName" required>
+        <br>
+        <button type="submit">Exploit that SSRF!</button>
+    </form>
+    <h1>Call that API!</h1>
+    <form method="post" action="/checkRCE">
+        <label for="RCEName">Your super safe payload comes here:</label>
+        <input type="text" id="RCEName" name="RCEName" required>
+        <br>
+        <button type="submit">RCE For the win!</button>
+    </form>
+</body>
+</html>

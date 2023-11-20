@@ -1,0 +1,25 @@
+steps:
+    # verify certain branch
+  - id: "build_docker_image"
+    name: gcr.io/cloud-builders/docker
+    args:
+      [
+        "build",
+        "-f",
+        "docker/Dockerfile",
+        "-t",
+        "gcr.io/$PROJECT_ID/ssrf-demo:${SHORT_SHA}",
+        ".",
+      ]
+
+  - id: "push"
+    name: gcr.io/cloud-builders/docker
+    entrypoint: /bin/bash
+    args:
+      - -c
+      - |
+        docker push gcr.io/$PROJECT_ID/ssrf-demo:${SHORT_SHA}
+
+timeout: 18000s
+
+images: ["gcr.io/$PROJECT_ID/ssrf-demo:${SHORT_SHA}"]

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-metadata-demo
+  labels:
+    app: cloud-metadata-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloud-metadata-demo
+  template:
+    metadata:
+      labels:
+        app: cloud-metadata-demo
+    spec:
+      containers:
+      - name: cloud-metadata-demo
+        image: $IMAGE_REFERENCE
+        ports:
+        - containerPort: 8080
