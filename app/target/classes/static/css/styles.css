@@ -1,0 +1,72 @@
+/* Apply a background color to the entire page */
+body {
+    background-color: #f7f7f7; /* Light gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the heading */
+h1 {
+    color: #3b3b3b; /* Dark gray */
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #3b3b3b; /* Dark gray */
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Style the forms */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #3b3b3b; /* Dark gray */
+}
+
+/* Style the input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Prevent text box overflow */
+}
+
+/* Style the buttons */
+button {
+    background-color: #4c8c4a; /* Moss green */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #397d3a; /* Darker moss green */
+}
+
+/* Add some spacing between elements */
+br {
+    clear: both;
+}

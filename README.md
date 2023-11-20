@@ -61,6 +61,10 @@ gcloud container clusters get-credentials $GKE_CLUSTER_NAME --zone $REGION --pro
 
 **Security Warning:** The vulnerabilities demonstrated in this application are intentional and for educational purposes only. Do not use this application in a production environment, and ensure that you have the necessary permissions before attempting to exploit any vulnerabilities.
 
+## Screenshot
+
+![Demo Image](images/screenshot.png)
+
 ## Contributing
 
 Contributions to enhance the demo or address any security concerns are welcome. Please submit a pull request or open an issue to discuss potential improvements.
