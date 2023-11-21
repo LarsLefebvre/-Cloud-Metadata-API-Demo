@@ -42,7 +42,7 @@ This repository is open for anyone to use as a learning tool to explore and show
 
 ```bash
 ## Navigate to the application directory
-cd ssrf-demo/app
+cd Cloud-Metadata-API-Demo/app
 ## Clean any previous build phase and makes sure the maven dependencies are installed
 mvn clean install
 ## Starts Cloudbuild.yaml file to generate the container image
